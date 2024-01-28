@@ -1,0 +1,61 @@
+<h3 style="padding: 10px;">Relatório de Usuário</h3>
+
+<form style="padding: 10px;" #formValidate="ngForm">
+
+
+
+  <div class="form-row">
+
+    <div class="form-group col-md-2">
+      <span style="color: red; font-size: 15px;" *ngIf="dataInicioValidade.invalid"> *</span>
+      <label for="dataInicio">Data Inicio</label>
+      <div class="input-group">
+        <input type="text" [(ngModel)]="userReport.dataInicio" #dataInicioValidade="ngModel" ngbDatepicker
+               #dataInicio="ngbDatepicker" class="form-control" id="dataInicio" name="dataInicio"
+               required="required" placeholder="dd/mm/yyyy">
+        <div class="input-group-append">
+          <button class="btn btn-primary" (click)="dataInicio.toggle()" type="button"></button>
+        </div>
+      </div>
+    </div>
+    <div class="form-group col-md-2">
+      <span style="color: red; font-size: 15px;" *ngIf="dataFimValidade.invalid"> *</span>
+      <label for="dataFim">Data Fim</label>
+      <div class="input-group">
+        <input type="text" [(ngModel)]="userReport.dataFim" #dataFimValidade="ngModel" ngbDatepicker
+               #dataFim="ngbDatepicker" class="form-control" id="dataFim" name="dataFim"
+               required="required" placeholder="dd/mm/yyyy">
+        <div class="input-group-append">
+          <button class="btn btn-primary" (click)="dataFim.toggle()" type="button"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-row" style="margin-top: 25px;">
+    <div class="form-group col-md-6">
+
+      <button type="button" (click)="imprimeRelatorio()" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Imprimir
+      </button>
+    </div>
+  </div>
+
+
+</form>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document" style="min-width: 90%; min-height: 90%; ">
+    <div class="modal-content" >
+      <div class="modal-body" style="height: 800px;">
+        <iframe id="pdf" name="pdf" width="100%" height="100%" frameborder="0" allowtransparency="true" ></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>

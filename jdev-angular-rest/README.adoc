@@ -1,0 +1,118 @@
+= JdevAngularRest
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+
+Angular ~8.2.14
+
+Versão do Node v14.17.3
+
+
+==  MASK
+
+Trabalhar com mascaras
+
+[source, shell]
+----
+# instalar plugin de mascara no projeto angular
+npm i ngx-mask@8.2.0
+----
+
+
+https://www.npmjs.com/package/ngx-mask/v/8.2.0
+
+https://github.com/amarkes/br-mask
+
+== Pagination
+
+[source, shell]
+----
+# instalar plugin de paginação no projeto angular
+npm i ngx-pagination@5.0.0
+
+# Deve estar assim no package:  "ngx-pagination": "^5.0.0",
+----
+
+== NG Bootstrap
+[source, shell]
+----
+# instalar plugin de componentes no projeto angular
+npm i --save @ng-bootstrap/ng-bootstrap@5.3.0
+
+ng add @angular/localize
+
+ng add @ng-bootstrap/schematics
+
+
+# Deve estar assim no package:  "ngx-pagination": "^5.0.0",
+----
+
+== Ng Currency
+
+[source, shell]
+----
+# instalar plugin de componentes no projeto angular
+npm i ngx-currency@2.2.2 --save
+
+----
+
+
+== Ng Chart
+
+[source, shell]
+----
+# instalar plugin de componentes no projeto angular
+npm i ng2-charts@2.3.0 chart.js@2.9.3 --save
+
+----
+
+== Implantar
+
+[source, shell]
+----
+# gerar arquivos para colocar no servidor
+ng build --base-href=/nome-do-seu-projeto
+
+# fica dentro da pasta dist
+# Mude no app-contants para o seu dominio
+# Depoiis de compilado, no index.html
+# mude a tag "base" e deixe só o nome do projeto
+
+----
+
+== Fontes Jasper
+
+Jasperreports-fonts
+
+Coloque a dependencia no pom
+
+https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports-fonts
+
+pegue a mesma versão do jasper que você está usando
+
+Faça um: mvn clean
+
+== Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+== Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+== Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+== Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+== Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+== Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+

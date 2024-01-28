@@ -1,0 +1,8 @@
+= Senhas e Configurações
+
+== Abrir Sistema local SICAT teste
+http://localhost:8080/SICAT/servlet/SGINI[SICAT] - renanturini : SICAT : Quando logado como **DEV** no **BD**
+
+=== Teste de Subtitulo
+
+ABC
